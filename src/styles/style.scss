@@ -1,0 +1,33 @@
+@import 'mixins';
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;700&family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+body, ul, ol {
+  margin: 0;
+  padding: 0;
+  background-color: #F7F1D9;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #1A2421;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+button, input {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+@import './src/blocks/header/header';
+@import './src/blocks/about/about';
+@import './src/blocks/info/info';
+@import './src/blocks/footer/footer';

@@ -1,0 +1,19 @@
+.about {
+  background: linear-gradient(90deg, #757232 41.28%, #D5B537 93.68%);
+  
+  &__area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+  &__text {
+    max-width: 790px;
+    font-weight: 400;
+    font-size: px-to-em(18);
+    line-height: 140%;
+    color: #F7F1D9;
+  }
+}

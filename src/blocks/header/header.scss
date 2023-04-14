@@ -1,0 +1,80 @@
+.header {
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 44px 0 50px;
+  
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+  &__kwork-link {
+    padding: 8px 58px;
+    border: 2px solid #757232;
+    border-radius: 30px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+    line-height: lh-to-pct(24, 16);
+    color: #757232;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    &:hover {
+      background-color: #757232;
+      color: #F7F1D9;
+    }
+  }
+  &__name {
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    font-size: px-to-em(56);
+    line-height: lh-to-pct(83, 56);
+    text-transform: uppercase;
+    color: #D5B537;
+  }
+  &__last-name {
+    font-weight: 300;
+  }
+  &__contacts {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-top: 1px solid;
+    border-image-source: linear-gradient(to right, #D5B537, transparent);
+    border-image-slice: 1;
+  }
+  &__contacts-icon {
+    margin-right: 10px;
+  }
+  &__contacts-info {
+    margin-right: 14px;
+  }
+  &__contacts-title {
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+    line-height: lh-to-pct(24, 16);
+  }
+  &__contact {
+    font-weight: 300;
+    font-size: px-to-em(14);
+    line-height: lh-to-pct(16, 14);
+    text-decoration: none;
+    color: #1F221F;
+    transition: 0.5s;
+    &:hover {
+      color: #757232;
+    }
+  }
+  &__profession {
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    font-size: px-to-em(26);
+    line-height: lh-to-pct(39, 26);
+    text-transform: uppercase;
+    color: #757232;
+  }
+}

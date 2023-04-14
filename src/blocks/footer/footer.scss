@@ -1,0 +1,33 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 22px 0;
+  border-top: 1px solid #D5B537;
+  font-weight: 700;
+  font-size: px-to-em(14);
+  line-height: lh-to-pct(16, 14);
+  color: #757232;
+  opacity: 0.5;
+  
+  &__location:before {
+    content: url(../img/location.png);
+    display: inline-block;
+    margin-right: 4px;
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+  }
+  &__design-by {
+    text-decoration: none;
+    color: #757232;
+    opacity: 0.5;
+    transition: 0.5s;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
