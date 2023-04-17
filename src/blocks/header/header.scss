@@ -46,8 +46,17 @@
     border-image-source: linear-gradient(to right, #D5B537, transparent);
     border-image-slice: 1;
   }
-  &__contacts-icon {
+  &__contact-link {
+    height: 42px;
     margin-right: 10px;
+    path {
+      transition: 0.5s;
+    }
+    &:hover {
+      path {
+        fill: #D5B537;
+      }
+    }
   }
   &__contacts-info {
     margin-right: 14px;
@@ -76,5 +85,67 @@
     line-height: lh-to-pct(39, 26);
     text-transform: uppercase;
     color: #757232;
+  }
+  @media screen and (max-width: 1100px) {
+    padding: 44px 15px 50px;
+  }
+  @media screen and (max-width: 910px) {
+    &__contact {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 650px) {
+    &__kwork-link {
+      padding: 6px 40px;
+    }
+    &__name {
+      font-size: px-to-em(48);
+    }
+    &__contacts-title {
+      display: none;
+    }
+    &__profession {
+      font-size: px-to-em(22);
+    }
+  }
+  @media screen and (max-width: 548px) {
+    padding: 30px 15px 60px;
+
+    &__block {
+      flex-direction: column-reverse;
+      padding-bottom: 0;
+    }
+    &__kwork-link, &__name {
+      align-self: flex-end;
+    }
+    &__contacts, &__profession {
+      align-self: flex-start;
+    }
+    &__contacts {
+      padding: 0;
+      border: none;
+    }
+    &__contacts-icon {
+      margin: 0;
+    }
+  }
+  @media screen and (max-width: 420px) {
+    padding: 20px 15px 40px;
+
+    &__kwork-link {
+      padding: 4px 30px;
+      font-size: px-to-em(14);
+    }
+    &__name {
+      font-size: px-to-em(36);
+    }
+    &__contact-link {
+      svg {
+        width: 36px;
+      }
+    }
+    &__profession {
+      font-size: px-to-em(18);
+    }
   }
 }
