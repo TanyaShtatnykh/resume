@@ -1,57 +1,61 @@
 mixin info()
   .info&attributes(attributes)
-    main.info__experience
-      .info__job
+    main.info__section
+      .info__block
         h2.info__title Опыт работы
-        ul.info__job-list
+        ul.info__list
           li.info__job-item
             .info__profession
               h3.info__job-title HR-менеджер
-              p.info__period 2022 - по настоящее время
+              p.info__job-text 2022 - по настоящее время
             .info__company 
               h3.info__company-title Компания “Водяной”
-              ul.info__duties-list
-                li.info__duties-item — Мониторинг рынка труда;
-                li.info__duties-item — Поиск и подбор персонала по всей России;
-                li.info__duties-item — Адаптация, обучение и аттестация персонала;
-                li.info__duties-item — Организация корпоративных мероприятий и тренингов;
-                li.info__duties-item — Разработка и корректировка бизнес-процессов.
+              ul.info__job-text
+                li.info__text-item — Мониторинг рынка труда;
+                li.info__text-item — Поиск и подбор персонала по всей России;
+                li.info__text-item — Адаптация, обучение и аттестация персонала;
+                li.info__text-item — Организация корпоративных мероприятий и тренингов;
+                li.info__text-item — Разработка и корректировка бизнес-процессов.
           li.info__job-item
             .info__profession
               h3.info__job-title Учредитель
-              p.info__period 2020 - по настоящее время
+              p.info__job-text 2020 - по настоящее время
             .info__company 
               h3.info__company-title Кофейня “Сансара”
-              ul.info__duties-list
-                li.info__duties-item Открытие собственной кофейни “с нуля”:
-                li.info__duties-item — Разработка концепции, бизнес-процессов, меню;
-                li.info__duties-item — Ведение бухгалтерского учета;
-                li.info__duties-item — Управление персоналом (+ поиск, обучение);
-                li.info__duties-item — Организация и контроль работы заведения.
+              ul.info__job-text
+                li.info__text-item Открытие собственной кофейни “с нуля”:
+                li.info__text-item — Разработка концепции, бизнес-процессов, меню;
+                li.info__text-item — Ведение бухгалтерского учета;
+                li.info__text-item — Управление персоналом (+ поиск, обучение);
+                li.info__text-item — Организация и контроль работы заведения.
           li.info__job-item
             .info__profession
               h3.info__job-title Шеф-бариста Бухгалтер
-              p.info__period 2020
+              p.info__job-text 2020
             .info__company 
               h3.info__company-title Кофейня “Ёлка”
-              ul.info__duties-list
-                li.info__duties-item Участие в открытие кофейни:
-                li.info__duties-item — Разработка бизнес-процессов бара, меню;
-                li.info__duties-item — Составление технологических карт;
-                li.info__duties-item — Поиск и подбор персонала;
-                li.info__duties-item — Обучение сотрудников;
-                li.info__duties-item — Непосредственная работа с гостями;
-                li.info__duties-item — Ведение первичной бухгалтерии.
-      .info__my-works
+              ul.info__job-text
+                li.info__text-item Участие в открытие кофейни:
+                li.info__text-item — Разработка бизнес-процессов бара, меню;
+                li.info__text-item — Составление технологических карт;
+                li.info__text-item — Поиск и подбор персонала;
+                li.info__text-item — Обучение сотрудников;
+                li.info__text-item — Непосредственная работа с гостями;
+                li.info__text-item — Ведение первичной бухгалтерии.
+      .info__block
         h2.info__title Работы
-        .info__works-list
-          a.info__work-link(href="https://tanyashtatnykh.github.io/pet-project-coffee/build/index.html") Сайт кофе (pet-project) 
-          a.info__work-link(href="#") Визитка (pet-project) 
-          a.info__work-link(href="https://tanyashtatnykh.github.io/mq-diploma/") Блог (pet-project)
-    aside.info__knowledge
-      .info__skills
+        .info__list
+          .info__container
+            a.info__work-link(href="https://tanyashtatnykh.github.io/pet-project-coffee/build/index.html") Сайт кофе (pet-project)
+            a.info__work-link(href="https://github.com/TanyaShtatnykh/pet-project-coffee") Сайт кофе (github)
+            a.info__work-link(href="https://tanyashtatnykh.github.io/resume/build/index.html") Визитка (pet-project)
+            a.info__work-link(href="https://github.com/TanyaShtatnykh/resume") Визитка (github)
+            a.info__work-link(href="https://tanyashtatnykh.github.io/blog/") Блог (pet-project)
+            a.info__work-link(href="https://github.com/TanyaShtatnykh/blog") Блог (github)
+    aside.info__section
+      .info__block
         h2.info__title Навыки
-        ul.info__skills-list
+        ul.info__list
           li.info__skills-item
             img.info__skill-icon(src="img/html.png" alt="HTML")
             .info__skill-info
@@ -88,9 +92,9 @@ mixin info()
               h3.info__skill-title Figma
               .info__skill-scale
                 .info__scale-level.info__scale-level--figma
-      .info__education
+      .info__block
         h2.info__title Образование
-        ul.info__education-list
+        ul.info__list
           li.info__education-item 
             h3.info__institution-title “Гильдия Фронтов”
             p.info__institution-period 2023 - по настоящее время
