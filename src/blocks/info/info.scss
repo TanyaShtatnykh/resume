@@ -12,7 +12,7 @@
   &__title {
     max-width: max-content;
     margin-bottom: 16px;
-    padding: 10px 0;
+    padding: 0 0 9px;
     border-bottom: 1px solid;
     border-image-source: linear-gradient(to right, #D5B537, transparent);
     border-image-slice: 1;
@@ -30,12 +30,12 @@
     }
   }
   &__profession {
-    max-width: 150px;
+    max-width: 162px;
     margin-right: 20px;
     text-align: right;
   }
   &__job-title {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     font-family: 'Oswald', sans-serif;
     font-weight: 700;
     font-size: px-to-em(24);
@@ -48,7 +48,7 @@
     line-height: lh-to-pct(19, 16);
   }
   &__company-title {
-    margin-bottom: 10px;
+    margin-bottom: 4px;
     font-family: 'Oswald', sans-serif;
     font-weight: 700;
     font-size: px-to-em(20);
@@ -61,7 +61,7 @@
   }
   &__work-link {
     margin: 0 10px 10px 0;
-    padding: 8px 10px;
+    padding: 6px 8px;
     border: 2px solid #757232;
     border-radius: 30px;
     font-family: 'Oswald', sans-serif;
