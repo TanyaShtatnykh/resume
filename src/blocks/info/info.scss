@@ -23,38 +23,6 @@
     text-transform: uppercase;
     color: #757232;
   }
-  &__job-item {
-    display: flex;
-    &:nth-child(n+2) {
-      margin-top: 20px;
-    }
-  }
-  &__profession {
-    max-width: 162px;
-    margin-right: 20px;
-    text-align: right;
-  }
-  &__job-title {
-    margin-bottom: 8px;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 700;
-    font-size: px-to-em(24);
-    line-height: lh-to-pct(36, 24);
-    color: #757232;
-  }
-  &__job-text {
-    font-weight: 300;
-    font-size: 1em;
-    line-height: lh-to-pct(19, 16);
-  }
-  &__company-title {
-    margin-bottom: 4px;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 700;
-    font-size: px-to-em(20);
-    line-height: 200%;
-    color: #757232;
-  }
   &__container {
     display: flex;
     flex-wrap: wrap;
@@ -83,83 +51,18 @@
       }
     }
   }
-  aside {
+  &__sidebar {
     max-width: 350px;
     margin-left: 20px;
   } 
-  &__skills-item {
-    display: flex;
-    &:nth-child(n+2) {
-      margin-top: 10px;
-    }
-  }
-  &__skill-info {
-    width: 100%;
-    margin-left: 10px;
-  }
-  &__skill-title {
-    margin-bottom: 4px;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 700;
-    font-size: px-to-em(18);
-    line-height: lh-to-pct(27, 18);
-  }
-  &__skill-scale {
-    height: 8px;
-    border-radius: 5px;
-    background-color: #D5B537;
-  }
-  &__scale-level {
-    height: 100%;
-    border-radius: 5px;
-    background-color: #757232;
-    &--html {
-      width: 60%;
-    }
-    &--css {
-      width: 55%;
-    }
-    &--js {
-      width: 20%;
-    }
-    &--jq {
-      width: 15%;
-    }
-    &--git {
-      width: 50%;
-    }
-    &--figma {
-      width: 35%;
-    }
-  }
-  &__education-item:nth-child(n+2){
-    margin-top: 20px;
-  }
-  &__institution-title {
-    margin-bottom: 4px;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 700;
-    font-size: px-to-em(22);
-    line-height: lh-to-pct(33, 22);
-    color: #757232;
-  }
-  &__institution-period {
-    margin-bottom: 10px;
-    font-weight: 300;
-    font-size: px-to-em(14);
-    line-height: lh-to-pct(16, 14);
-  }
-  &__specialty {
-    font-weight: 700;
-    font-size: px-to-em(16);
-    line-height: lh-to-pct(19, 16);
-  }
+
   @media screen and (max-width: 1100px) {
     padding: 40px 15px;    
   }
   @media screen and (max-width: 790px) {
     flex-direction: column;
-    main, aside {
+
+    &__subsection, &__sidebar {
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
@@ -177,32 +80,13 @@
     &__title {
       font-size: px-to-em(22);
     }
-    &__profession {
-      max-width: 100px;
-    }
-    &__job-title {
-      font-size: px-to-em(20);
-    }
-    &__job-text, &__specialty {
-      font-size: px-to-em(14);
-    }
-    &__company-title {
-      font-size: 1em;
-    }
     &__work-link {
       padding: 6px 8px;
       font-size: px-to-em(12);
     }
-    &__skill-icon {
-      max-width: 38px;
-      object-fit: contain;
-    }
-    &__institution-title {
-      font-size: px-to-em(18);
-    }
   }
   @media screen and (max-width: 650px) {
-    main, aside {
+    &__subsection, &__sidebar {
       margin: 0;
       flex-direction: column;
     }
@@ -234,7 +118,7 @@
     &__title--open::after {
       transform: rotate(180deg);
     }
-    &__list {
+    &__wrapper {
       display: none;
       &--open {
         display: block;

@@ -1,0 +1,33 @@
+.skills {
+    display: flex;
+    &:nth-child(n+2) {
+      margin-top: 10px;
+    }
+  &__info {
+    width: 100%;
+    margin-left: 10px;
+  }
+  &__title {
+    margin-bottom: 4px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: px-to-em(18);
+    line-height: lh-to-pct(27, 18);
+  }
+  &__scale {
+    height: 8px;
+    border-radius: 5px;
+    background-color: #D5B537;
+  }
+  &__level {
+    height: 100%;
+    border-radius: 5px;
+    background-color: #757232;
+  }
+  @media screen and (max-width: 790px) {
+    &__skill-icon {
+      max-width: 38px;
+      object-fit: contain;
+    }
+  }
+}

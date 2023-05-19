@@ -1,26 +1,26 @@
 mixin header(modifier)
   header.header&attributes(attributes)
-    .header__block
-      a.header__kwork-link(href="https://kwork.ru/user/tanyashtatnykh") Kwork
-      h1.header__name
-        span.header__first-name Татьяна 
-        span.header__last-name Штатных
-    .header__block
-      .header__contacts
-        a.header__contact-link(href="tel:+78126034911")
-          include ./img/phone.svg
-        .header__contacts-info
-          h2.header__contacts-title Телефон
-          a.header__contact(href="tel:+78126034911") 8-996-205-21-08
-        a.header__contact-link(href="mailto:tanya.shtatnykh@gmail.com")
-          include ./img/mail.svg
-        .header__contacts-info
-          h2.header__contacts-title Почта
-          a.header__contact(href="mailto:tanya.shtatnykh@gmail.com") tanya.shtatnykh@gmail.com
-        a.header__contact-link(href="https://github.com/TanyaShtatnykh")
-          include ./img/gitLink.svg
-        .header__contacts-info
-          h2.header__contacts-title GIT
-          a.header__contact(href="https://github.com/TanyaShtatnykh") https://github.com/TanyaShtatnykh
-      p.header__profession HTML-Верстальщик
-      
+    .header__area
+      .header__block
+        a.header__kwork-link(href="https://kwork.ru/user/tanyashtatnykh") Kwork
+        h1.header__name
+          span.header__first-name Татьяна 
+          span.header__last-name Штатных
+      .header__block
+        .header__contacts
+          a.header__contact-link(href="tel:+78126034911")
+            include ./img/phone.svg
+            .header__contact-info
+              h2.header__contacts-title Телефон
+              p.header__contact 8-996-205-21-08
+          a.header__contact-link(href="mailto:tanya.shtatnykh@gmail.com")
+            include ./img/mail.svg
+            .header__contact-info
+              h2.header__contacts-title Почта
+              p.header__contact tanya.shtatnykh@gmail.com
+          a.header__contact-link(href="https://github.com/TanyaShtatnykh")
+            include ./img/gitLink.svg
+            .header__contact-info
+              h2.header__contacts-title GIT
+              p.header__contact https://github.com/TanyaShtatnykh
+        p.header__profession HTML-Верстальщик

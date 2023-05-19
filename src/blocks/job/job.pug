@@ -1,0 +1,10 @@
+mixin job(profession, period, company, tasks)
+  .job&attributes(attributes)
+    .job__profession
+      h3.job__post=profession
+      p.job__text=period
+    .job__company
+      h3.job__company-title=company
+      .job__tasks
+        each value in tasks 
+          p.job__task=value

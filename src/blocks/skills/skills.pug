@@ -1,0 +1,9 @@
+mixin skills(icon, title, level)
+  .skills&attributes(attributes)
+    img.skills__icon(src=icon, alt="")
+    .skills__info
+      h3.skills__title=title
+      .skills__scale
+        .skills__level(style=`width: ${level}%`)
+
+            

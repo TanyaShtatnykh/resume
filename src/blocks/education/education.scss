@@ -1,0 +1,33 @@
+.education {
+  &:nth-child(n+2) {
+    margin-top: 20px;
+  }
+  &__title {
+    margin-bottom: 4px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: px-to-em(22);
+    line-height: lh-to-pct(33, 22);
+    color: #757232;
+  }
+  &__period {
+    margin-bottom: 10px;
+    font-weight: 300;
+    font-size: px-to-em(14);
+    line-height: lh-to-pct(16, 14);
+  }
+  &__specialty {
+    font-weight: 700;
+    font-size: px-to-em(16);
+    line-height: lh-to-pct(19, 16);
+  }
+  @media screen and (max-width: 790px) {
+    &__title {
+      font-size: px-to-em(18);
+    }
+    &__specialty {
+      font-size: px-to-em(14);
+    }
+  }
+}
+

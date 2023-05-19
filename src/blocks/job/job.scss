@@ -1,0 +1,48 @@
+.job {
+  display: flex;
+  &:nth-child(n+2) {
+    margin-top: 20px;
+  }
+
+  &__profession {
+    max-width: 162px;
+    margin-right: 20px;
+    text-align: right;
+  }
+  &__post {
+    margin-bottom: 8px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: px-to-em(24);
+    line-height: lh-to-pct(36, 24);
+    color: #757232;
+  }
+  &__text, &__task {
+    font-weight: 300;
+    font-size: 1em;
+    line-height: lh-to-pct(19, 16);
+  }
+  &__company-title {
+    margin-bottom: 4px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: px-to-em(20);
+    line-height: 200%;
+    color: #757232;
+  }
+
+  @media screen and (max-width: 790px) {
+    &__profession {
+      max-width: 100px;
+    }
+    &__post {
+      font-size: px-to-em(20);
+    }
+    &__text {
+      font-size: px-to-em(14);
+    }
+    &__company-title {
+      font-size: 1em;
+    }
+  }
+}

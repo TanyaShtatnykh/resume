@@ -1,50 +1,38 @@
 mixin info()
   .info&attributes(attributes)
-    main.info__section
+    section.info__subsection
       .info__block
         h2.info__title Опыт работы
-        ul.info__list
-          li.info__job-item
-            .info__profession
-              h3.info__job-title HR-менеджер
-              p.info__job-text 2022 - по настоящее время
-            .info__company 
-              h3.info__company-title Компания “Водяной”
-              ul.info__job-text
-                li.info__text-item — Мониторинг рынка труда;
-                li.info__text-item — Поиск и подбор персонала по всей России;
-                li.info__text-item — Адаптация, обучение и аттестация персонала;
-                li.info__text-item — Организация корпоративных мероприятий и тренингов;
-                li.info__text-item — Разработка и корректировка бизнес-процессов.
-          li.info__job-item
-            .info__profession
-              h3.info__job-title Учредитель
-              p.info__job-text 2020 - по настоящее время
-            .info__company 
-              h3.info__company-title Кофейня “Сансара”
-              ul.info__job-text
-                li.info__text-item Открытие собственной кофейни “с нуля”:
-                li.info__text-item — Разработка концепции, бизнес-процессов, меню;
-                li.info__text-item — Ведение бухгалтерского учета;
-                li.info__text-item — Управление персоналом (+ поиск, обучение);
-                li.info__text-item — Организация и контроль работы заведения.
-          li.info__job-item
-            .info__profession
-              h3.info__job-title Шеф-бариста Бухгалтер
-              p.info__job-text 2020
-            .info__company 
-              h3.info__company-title Кофейня “Ёлка”
-              ul.info__job-text
-                li.info__text-item Участие в открытие кофейни:
-                li.info__text-item — Разработка бизнес-процессов бара, меню;
-                li.info__text-item — Составление технологических карт;
-                li.info__text-item — Поиск и подбор персонала;
-                li.info__text-item — Обучение сотрудников;
-                li.info__text-item — Непосредственная работа с гостями;
-                li.info__text-item — Ведение первичной бухгалтерии.
+        .info__wrapper
+          +job("HR-менеджер", 
+              "2022 - по настоящее время", 
+              "Компания “Водяной”",
+              ["— Мониторинг рынка труда;",
+              "— Поиск и подбор персонала по всей России;",
+              "— Адаптация, обучение и аттестация персонала;",
+              "— Организация корпоративных мероприятий и тренингов;",
+              "— Разработка и корректировка бизнес-процессов."])
+          +job("Учредитель",
+              "2020 - по настоящее время",
+              "Кофейня “Сансара”",
+              ["Открытие собственной кофейни “с нуля”:",
+              "— Разработка концепции, бизнес-процессов, меню;",
+              "— Ведение бухгалтерского учета;",
+              "— Управление персоналом (+ поиск, обучение);",
+              "— Организация и контроль работы заведения."])
+          +job("Шеф-бариста Бухгалтер",
+              "2020",
+              "Кофейня “Ёлка”",
+              ["Участие в открытие кофейни:",
+              "— Разработка бизнес-процессов бара, меню;",
+              "— Составление технологических карт;",
+              "— Поиск и подбор персонала;",
+              "— Обучение сотрудников;",
+              "— Непосредственная работа с гостями;",
+              "— Ведение первичной бухгалтерии."])
       .info__block
         h2.info__title Работы
-        .info__list
+        .info__wrapper
           .info__container
             a.info__work-link(href="https://tanyashtatnykh.github.io/pet-project-coffee/build/index.html") Сайт кофе (pet-project)
             a.info__work-link(href="https://github.com/TanyaShtatnykh/pet-project-coffee") Сайт кофе (github)
@@ -52,58 +40,19 @@ mixin info()
             a.info__work-link(href="https://github.com/TanyaShtatnykh/resume") Визитка (github)
             a.info__work-link(href="https://tanyashtatnykh.github.io/blog/") Блог (pet-project)
             a.info__work-link(href="https://github.com/TanyaShtatnykh/blog") Блог (github)
-    aside.info__section
+    aside.info__sidebar
       .info__block
         h2.info__title Навыки
-        ul.info__list
-          li.info__skills-item
-            img.info__skill-icon(src="img/html.png" alt="HTML")
-            .info__skill-info
-              h3.info__skill-title HTML
-              .info__skill-scale
-                .info__scale-level.info__scale-level--html
-          li.info__skills-item
-            img.info__skill-icon(src="img/css.png" alt="CSS")
-            .info__skill-info
-              h3.info__skill-title CSS / SCSS
-              .info__skill-scale 
-                .info__scale-level.info__scale-level--css
-          li.info__skills-item
-            img.info__skill-icon(src="img/js.png" alt="Java Script")
-            .info__skill-info
-              h3.info__skill-title Java Script
-              .info__skill-scale
-                .info__scale-level.info__scale-level--js
-          li.info__skills-item
-            img.info__skill-icon(src="img/JQ.png" alt="JQuery")
-            .info__skill-info
-              h3.info__skill-title JQuery
-              .info__skill-scale
-                .info__scale-level.info__scale-level--jq
-          li.info__skills-item
-            img.info__skill-icon(src="img/git.png" alt="GIT")
-            .info__skill-info
-              h3.info__skill-title GIT
-              .info__skill-scale
-                .info__scale-level.info__scale-level--git
-          li.info__skills-item
-            img.info__skill-icon(src="img/figma.png" alt="Figma")
-            .info__skill-info
-              h3.info__skill-title Figma
-              .info__skill-scale
-                .info__scale-level.info__scale-level--figma
+        .info__wrapper
+          +skills("img/html.png", "HTML", 60)
+          +skills("img/css.png", "CSS / SCSS", 55)
+          +skills("img/js.png", "Java Script", 20)
+          +skills("img/jQ.png", "JQuery", 15)
+          +skills("img/git.png", "GIT", 50)
+          +skills("img/figma.png", "Figma", 35)
       .info__block
         h2.info__title Образование
-        ul.info__list
-          li.info__education-item 
-            h3.info__institution-title “Гильдия Фронтов”
-            p.info__institution-period 2023 - по настоящее время
-            p.info__specialty HTML-верстальщик
-          li.info__education-item 
-            h3.info__institution-title “Нетология”
-            p.info__institution-period 2022
-            p.info__specialty Веб-разработчик
-          li.info__education-item 
-            h3.info__institution-title Новосибирский областной колледж культуры и искусств
-            p.info__institution-period 2011 - 2015
-            p.info__specialty Артист, преподаватель, концертмейстер
+        .info__wrapper
+          +education("“Гильдия Фронтов”","2023 - по настоящее время","HTML-верстальщик")
+          +education("“Нетология”","2022","Веб-разработчик")
+          +education("Новосибирский областной колледж культуры и искусств","2011 - 2015","Артист, преподаватель, концертмейстер")
