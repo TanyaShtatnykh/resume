@@ -119,7 +119,7 @@
       transform: rotate(180deg);
     }
     &__wrapper {
-      display: none;
+      display: none; //анимация
       &--open {
         display: block;
         margin: 20px 0;
