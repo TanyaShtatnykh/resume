@@ -4,6 +4,12 @@ mixin info()
       .info__block
         h2.info__title Опыт работы
         .info__wrapper
+          +job("HTML-верстальщик", 
+              "2023 - по настоящее время", 
+              "Freelance",
+              ["— Верстка сайта по макетам из Figma;",
+              "— Натяжка готовой верстки на WordPress;",
+              "— Взаимодействие с дизайнером."])
           +job("HR-менеджер", 
               "2022 - по настоящее время", 
               "Компания “Водяной”",
@@ -38,22 +44,24 @@ mixin info()
             a.info__work-link(href="https://github.com/TanyaShtatnykh/pet-project-coffee") Сайт кофе (github)
             a.info__work-link(href="https://tanyashtatnykh.github.io/resume/build/index.html") Визитка (pet-project)
             a.info__work-link(href="https://github.com/TanyaShtatnykh/resume") Визитка (github)
-            a.info__work-link(href="https://tanyashtatnykh.github.io/blog/") Блог (pet-project)
-            a.info__work-link(href="https://github.com/TanyaShtatnykh/blog") Блог (github)
+            //- a.info__work-link(href="https://tanyashtatnykh.github.io/blog/") Блог (pet-project)
+            //- a.info__work-link(href="https://github.com/TanyaShtatnykh/blog") Блог (github)
             a.info__work-link(href="https://tanyashtatnykh.github.io/testTask/build/index.html") Equiteez (testTask)
             a.info__work-link(href="https://github.com/TanyaShtatnykh/testTask") Equiteez (github)
             a.info__work-link(href="https://tanyashtatnykh.github.io/pet-project-doctor/build/index.html") Сайт врача (pet-project)
             a.info__work-link(href="https://github.com/TanyaShtatnykh/pet-project-doctor") Сайт врача (github)
+            a.info__work-link(href="https://baza-lounge.ru/") Кальянная "База" (commercial project)
     aside.info__sidebar
       .info__block
         h2.info__title Навыки
         .info__wrapper
-          +skills("img/html.png", "HTML", 60)
-          +skills("img/css.png", "CSS / SCSS", 55)
+          +skills("img/html.png", "HTML", 70)
+          +skills("img/css.png", "CSS / SCSS", 65)
           +skills("img/js.png", "Java Script", 20)
-          +skills("img/jQ.png", "JQuery", 15)
+          +skills("img/jQ.png", "JQuery", 30)
           +skills("img/git.png", "GIT", 50)
-          +skills("img/figma.png", "Figma", 35)
+          +skills("img/figma.png", "Figma", 40)
+          +skills("img/wp.png", "WordPress", 20)
       .info__block
         h2.info__title Образование
         .info__wrapper
