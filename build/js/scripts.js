@@ -2,6 +2,7 @@
 
 
 
+
 $(function () {
   $('.info__title').on('click', function () {
     if (!$(this).hasClass('info__title--open')) {
@@ -12,4 +13,3 @@ $(function () {
     $(this).next('.info__wrapper').toggleClass('info__wrapper--open');
   });
 });
-

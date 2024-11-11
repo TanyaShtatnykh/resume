@@ -92,6 +92,9 @@
       padding: 6px 8px;
       font-size: px-to-em(12);
     }
+    &__sidebar {
+      width: auto;
+    }
   }
   @media screen and (max-width: 650px) {
     &__subsection, &__sidebar {
