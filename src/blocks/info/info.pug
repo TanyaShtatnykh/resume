@@ -5,13 +5,21 @@ mixin info()
         h2.info__title Опыт работы
         .info__wrapper
           +job("HTML-верстальщик", 
-              "2023 - по настоящее время", 
+              "01.2024 - 10.2021", 
+              "LuckyGroup",
+              ["— Разработка и поддержка контентных сайтов на wordpress;",
+              "— Верстка и редактирование транзитных страниц (прелендинг/лендинг) для работы с трафиком в CPA сети;",
+              "— Реализация простых решений с помощью JS;",
+              "— Поддержка текущего функционала и разработка нового;",
+              "— Оптимизация скорости загрузки сайта."])
+          +job("HTML-верстальщик", 
+              "08.2023 - по настоящее время", 
               "Freelance",
               ["— Верстка сайта по макетам из Figma;",
               "— Натяжка готовой верстки на WordPress;",
               "— Взаимодействие с дизайнером."])
-          +job("HR-менеджер", 
-              "2022 - по настоящее время", 
+          +job("Ведущий HR-менеджер", 
+              "07.2022 - 01.2024", 
               "Компания “Водяной”",
               ["— Мониторинг рынка труда;",
               "— Поиск и подбор персонала по всей России;",
@@ -19,52 +27,40 @@ mixin info()
               "— Организация корпоративных мероприятий и тренингов;",
               "— Разработка и корректировка бизнес-процессов."])
           +job("Учредитель",
-              "2020 - по настоящее время",
+              "10.2020 - по настоящее время",
               "Кофейня “Сансара”",
               ["Открытие собственной кофейни “с нуля”:",
               "— Разработка концепции, бизнес-процессов, меню;",
               "— Ведение бухгалтерского учета;",
               "— Управление персоналом (+ поиск, обучение);",
               "— Организация и контроль работы заведения."])
-          +job("Шеф-бариста Бухгалтер",
-              "2020",
-              "Кофейня “Ёлка”",
-              ["Участие в открытие кофейни:",
-              "— Разработка бизнес-процессов бара, меню;",
-              "— Составление технологических карт;",
-              "— Поиск и подбор персонала;",
-              "— Обучение сотрудников;",
-              "— Непосредственная работа с гостями;",
-              "— Ведение первичной бухгалтерии."])
       .info__block
         h2.info__title Работы
         .info__wrapper
           .info__container
+            a.info__work-link(href="https://firstell.com/") Firstell (commercial project)
             a.info__work-link(href="https://tanyashtatnykh.github.io/pet-project-coffee/build/index.html") Сайт кофе (pet-project)
             a.info__work-link(href="https://github.com/TanyaShtatnykh/pet-project-coffee") Сайт кофе (github)
             a.info__work-link(href="https://tanyashtatnykh.github.io/resume/build/index.html") Визитка (pet-project)
             a.info__work-link(href="https://github.com/TanyaShtatnykh/resume") Визитка (github)
-            //- a.info__work-link(href="https://tanyashtatnykh.github.io/blog/") Блог (pet-project)
-            //- a.info__work-link(href="https://github.com/TanyaShtatnykh/blog") Блог (github)
             a.info__work-link(href="https://tanyashtatnykh.github.io/testTask/build/index.html") Equiteez (testTask)
             a.info__work-link(href="https://github.com/TanyaShtatnykh/testTask") Equiteez (github)
             a.info__work-link(href="https://tanyashtatnykh.github.io/pet-project-doctor/build/index.html") Сайт врача (pet-project)
             a.info__work-link(href="https://github.com/TanyaShtatnykh/pet-project-doctor") Сайт врача (github)
-            a.info__work-link(href="https://baza-lounge.ru/") Кальянная "База" (commercial project)
     aside.info__sidebar
       .info__block
         h2.info__title Навыки
         .info__wrapper
-          +skills("img/html.png", "HTML", 70)
-          +skills("img/css.png", "CSS / SCSS", 65)
-          +skills("img/js.png", "Java Script", 20)
-          +skills("img/jQ.png", "JQuery", 30)
+          +skills("img/html.png", "HTML", 80)
+          +skills("img/css.png", "CSS / SCSS", 80)
+          +skills("img/js.png", "Java Script", 50)
+          +skills("img/jQ.png", "JQuery", 40)
           +skills("img/git.png", "GIT", 50)
-          +skills("img/figma.png", "Figma", 40)
-          +skills("img/wp.png", "WordPress", 20)
+          +skills("img/figma.png", "Figma", 70)
+          +skills("img/wp.png", "WordPress", 60)
+        p.info__skills-text + Bootstrap, BEM, Gulp, ACF, Pug, PHP&nbsp;(основы)
       .info__block
         h2.info__title Образование
         .info__wrapper
           +education("“Гильдия Фронтов”","2023 - по настоящее время","HTML-верстальщик")
           +education("“Нетология”","2022","Веб-разработчик")
-          +education("Новосибирский областной колледж культуры и искусств","2011 - 2015","Артист, преподаватель, концертмейстер")
